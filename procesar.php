@@ -12,7 +12,7 @@ try {
     // En Hostinger suele tener el formato: u331324140_usuario
     $host      = "srv847.hstgr.io";
     $usuario   = "u988721444_rrhh";   // <-- Poné acá tu usuario de MySQL
-    $clave     = "Malbor0";
+    $clave     = "#Malbor0";
     $basedatos = "u988721444_personas";
 
     // ============================================
