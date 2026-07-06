@@ -46,9 +46,9 @@ $fecha_alta      = valor('fecha_alta');
 $nacionalidad    = valor('nacionalidad');
 
 // Validación mínima de campos obligatorios
-if (!$nombre || !$fecha_nac || !$cuil ||  !$fecha_alta) {
-    die("Faltan completar campos obligatorios (nombre, fecha de nacimiento, CUIL, empresa, fecha de alta).");
-}
+// if (!$nombre || !$fecha_nac || !$cuil ||  !$fecha_alta) {
+//     die("Faltan completar campos obligatorios (nombre, fecha de nacimiento, CUIL, empresa, fecha de alta).");
+// }
 
 // ============================================
 // INSERT CON SENTENCIA PREPARADA (evita SQL injection)
