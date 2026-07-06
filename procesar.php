@@ -5,7 +5,7 @@
 // IMPORTANTE: completá el usuario de MySQL.
 // En Hostinger suele tener el formato: u331324140_usuario
 $host    = "srv813.hstgr.io";        // <-- Poné acá tu host de MySQL
-$usuario = "u988721444_personas";   // <-- Poné acá tu usuario de MySQL
+$usuario = "u988721444_rrhh";   // <-- Poné acá tu usuario de MySQL
 $clave   = "#Malbor0";
 $basedatos = "u988721444_personas";
 
