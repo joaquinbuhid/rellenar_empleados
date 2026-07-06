@@ -70,7 +70,6 @@ $stmt->bind_param(
     $nombre,
     $fecha_nac,
     $est_civil,
-    $empresa_id,
     $domicilio,
     $cuil,
     $telefono,
