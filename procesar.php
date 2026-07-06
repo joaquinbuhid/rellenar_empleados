@@ -33,7 +33,6 @@ function valor($campo) {
 $nombre          = valor('nombre');
 $fecha_nac       = valor('fecha_nac');
 $est_civil       = valor('est_civil');
-$empresa_id      = valor('empresa_id');
 $domicilio       = valor('domicilio');
 $cuil            = valor('CUIL');
 $telefono        = valor('telefono');
@@ -47,7 +46,7 @@ $fecha_alta      = valor('fecha_alta');
 $nacionalidad    = valor('nacionalidad');
 
 // Validación mínima de campos obligatorios
-if (!$nombre || !$fecha_nac || !$cuil || !$empresa_id || !$fecha_alta) {
+if (!$nombre || !$fecha_nac || !$cuil ||  !$fecha_alta) {
     die("Faltan completar campos obligatorios (nombre, fecha de nacimiento, CUIL, empresa, fecha de alta).");
 }
 
@@ -55,10 +54,10 @@ if (!$nombre || !$fecha_nac || !$cuil || !$empresa_id || !$fecha_alta) {
 // INSERT CON SENTENCIA PREPARADA (evita SQL injection)
 // ============================================
 $sql = "INSERT INTO empleados
-        (nombre, fecha_nac, est_civil, empresa_id, domicilio, CUIL, telefono,
+        (nombre, fecha_nac, est_civil, domicilio, CUIL, telefono,
          nro_legajo, nro_credencial, fecha_venc_cred, hora_entrada, hora_salida,
          email, fecha_alta, nacionalidad)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 $stmt = $conexion->prepare($sql);
 
