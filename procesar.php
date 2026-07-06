@@ -5,8 +5,8 @@
 // IMPORTANTE: completá el usuario de MySQL.
 // En Hostinger suele tener el formato: u331324140_usuario
 $host    = "srv847.hstgr.io";
-$usuario = "COMPLETAR_USUARIO_MYSQL";   // <-- Poné acá tu usuario de MySQL
-$clave   = "Malbor0";
+$usuario = "u331324140_presencias";   // <-- Poné acá tu usuario de MySQL
+$clave   = "#Malbor0";
 $basedatos = "u331324140_presencias";
 
 // ============================================
@@ -42,7 +42,6 @@ $nro_credencial  = valor('nro_credencial');
 $fecha_venc_cred = valor('fecha_venc_cred');
 $hora_entrada    = valor('hora_entrada');
 $hora_salida     = valor('hora_salida');
-$pendiente       = isset($_POST['pendiente']) ? 1 : 0;
 $email           = valor('email');
 $fecha_alta      = valor('fecha_alta');
 $nacionalidad    = valor('nacionalidad');
@@ -58,8 +57,8 @@ if (!$nombre || !$fecha_nac || !$cuil || !$empresa_id || !$fecha_alta) {
 $sql = "INSERT INTO empleados
         (nombre, fecha_nac, est_civil, empresa_id, domicilio, CUIL, telefono,
          nro_legajo, nro_credencial, fecha_venc_cred, hora_entrada, hora_salida,
-         pendiente, email, fecha_alta, nacionalidad)
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+         email, fecha_alta, nacionalidad)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 $stmt = $conexion->prepare($sql);
 
