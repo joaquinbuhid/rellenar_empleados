@@ -104,4 +104,5 @@ if ($stmt->execute()) {
 
 $stmt->close();
 $conexion->close();
+echo "<br><a href='formulario.html'>Volver al formulario</a>";
 ?>
